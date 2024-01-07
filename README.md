@@ -19,7 +19,6 @@ contract TokenCorrect is Token {
         balance[_to] += _amt;
     }
 }
-
 contract Test {
     function property_transfer(address _token, address _to, uint _amt) public {
         require(_to != address(this));
